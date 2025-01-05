@@ -1,0 +1,10 @@
+name: Deploy to Firebase
+
+on: push
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: npm install -g firebase-tools
+      - run: firebase deploy --project sokoni-44ef1 --token ${{ secrets.FIREBASE_TOKEN }}
