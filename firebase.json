@@ -1,7 +1,7 @@
 {
   "hosting": {
     "site": "sokoni-44ef1",
-    "public": "generators/app_generator/build",
+    "public": "generators/app_generator",
     "ignore": [
       "firebase.json",
       "**/.*",
